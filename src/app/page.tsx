@@ -1,8 +1,14 @@
+import Header from "@/components/Header";
+import Hero from "@/components/Hero";
+
 const Home = () => {
   return (
-    <main>
-      <h1 className="text-64">Hello World</h1>
-    </main>
+    <>
+      <Header />
+      <main className="flex flex-col justify-center items-center w-full h-full pt-40">
+        <Hero />
+      </main>
+    </>
   );
 };
 

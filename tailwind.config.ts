@@ -24,7 +24,9 @@ const config: Config = {
       },
       fontSize: {
         128: "8em",
+        120: "7.5em",
         96: "6em",
+        94: "5.875em",
         64: "4em",
         48: "3em",
         36: "2.25em",
@@ -34,6 +36,9 @@ const config: Config = {
         16: "1em",
         14: "0.875em",
         12: "0.75em",
+      },
+      lineHeight: {
+        "1em": "1em",
       },
     },
   },
