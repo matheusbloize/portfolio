@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  @font-face {
+    font-family: "Clash Grotesk";
+    src: url("../assets/fonts/ClashGrotesk-Variable.ttf");
+  }
+
+  @font-face {
+    font-family: "General Sans";
+    src: url("../assets/fonts/GeneralSans-Variable.ttf");
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body::before,
+body::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  opacity: 40%;
+}
+
+body::before {
+  filter: url(#grainy);
+  background-color: #F1E7DB;
+}
