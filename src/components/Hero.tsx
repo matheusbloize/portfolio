@@ -1,6 +1,7 @@
 import Image from "next/image";
 
-import brain from "@/assets/images/brain.svg";
+import brain from "@/assets/images/brain.webp";
+// import brain from "@/assets/images/brain.svg";
 import github from "@/assets/images/github.svg";
 import instagram from "@/assets/images/instagram.svg";
 import linkedin from "@/assets/images/linkedin.svg";
@@ -10,7 +11,7 @@ const Hero = () => {
     <section className="relative flex flex-col items-center justify-center w-full px-4 md:px-0">
       <Image
         // className="absolute -z-10 [transform:translate(0,3%);]"
-        className="absolute -z-10 [transform:translate(0,1.5em);] h-[90vh]"
+        className="absolute -z-10 [transform:translate(0,1.5em);]"
         src={brain}
         alt="Brain Shape."
         width={1138}
