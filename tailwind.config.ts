@@ -40,6 +40,19 @@ const config: Config = {
       lineHeight: {
         "1em": "1em",
       },
+      keyframes: {
+        nav: {
+          "0%, 100%": {
+            scale: "1",
+          },
+          "50%": {
+            scale: "1.5",
+          },
+        },
+      },
+      animation: {
+        nav: "nav .5s ease-in",
+      },
     },
   },
   plugins: [],

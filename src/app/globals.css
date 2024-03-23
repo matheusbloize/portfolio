@@ -30,7 +30,7 @@ body,
 body::before,
 body::after {
   content: "";
-  position: absolute;
+  position: fixed;
   left: 0;
   top: 0;
   width: 100%;
@@ -42,4 +42,112 @@ body::after {
 body::before {
   filter: url(#grainy);
   background-color: #F1E7DB;
+}
+
+img {
+  user-select: none;
+  -webkit-user-drag: none;
+}
+
+::selection {
+  background-color: #131315;
+  color: #F1E7DB;
+}
+
+::-webkit-scrollbar {
+  width: 1.125em;
+  height: 0;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #F1E7DB;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #131315;
+  border: 3.5px solid transparent;
+  background-clip: content-box;
+}
+
+::-webkit-scrollbar-button:single-button {
+  background-color: #F1E7DB;
+  display: block;
+  background-size: .625em;
+  background-repeat: no-repeat;
+}
+
+::-webkit-scrollbar-button:single-button:vertical:decrement {
+  height: .75em;
+  width: 1em;
+  background-position: center 4px;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='100' height='100' fill='rgb(241 rgb(19 19 21) 219)'><polygon points='50,00 0,50 100,50'/></svg>");
+}
+
+::-webkit-scrollbar-button:single-button:vertical:increment {
+  height: .75em;
+  width: 1em;
+  background-position: center 4px;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='100' height='100' fill='rgb(rgb(19 19 21) 231 219)'><polygon points='0,0 100,0 50,50'/></svg>");
+}
+
+.border-link:hover::after {
+  width: 100%;
+}
+
+.border-link::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: .1em;
+  transition: width .33s linear;
+  width: 0%;
+}
+
+.border-link::after {
+  background-color: #131315;
+}
+
+@keyframes nav-in-400 {
+  0% {
+    left: -400px;
+  }
+
+  100% {
+    left: 0;
+  }
+}
+
+@keyframes nav-in-768 {
+  0% {
+    left: -768px;
+  }
+
+  100% {
+    left: 0;
+  }
+}
+
+@keyframes nav-in-1024 {
+  0% {
+    left: -1024px;
+  }
+
+  100% {
+    left: 0;
+  }
+}
+
+@keyframes logo {
+  0% {
+    transform: rotateZ(0deg);
+  }
+
+  50% {
+    transform: rotateZ(180deg);
+  }
+
+  100% {
+    transform: rotateZ(360deg);
+  }
 }
