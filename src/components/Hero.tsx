@@ -6,7 +6,7 @@ import linkedin from "@/assets/images/linkedin.svg";
 
 const Hero = () => {
   return (
-    <section className="relative flex flex-col items-center justify-start w-full h-screen mt-20">
+    <section className="relative flex flex-col items-center justify-start w-full h-screen">
       <section className="w-full h-[85vh] flex flex-col justify-center items-center gap-8">
         <Image
           className="absolute w-[120vh] h-[80vh] -z-10 object-cover"

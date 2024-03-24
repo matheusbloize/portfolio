@@ -40,6 +40,12 @@ const Header = () => {
         }
       }, 500);
     }
+    if (actualImage.alt === "Matheus Bloize's Logo.") {
+      document.body.style.overflow = "hidden";
+      scrollTo(0, 0);
+    } else {
+      document.body.style.overflow = "auto";
+    }
   };
 
   const checkWidth = () => {
@@ -63,7 +69,7 @@ const Header = () => {
   }, []);
 
   return (
-    <header className="lg:flex justify-between items-end w-[95%] mt-4 absolute mx-4">
+    <header className="lg:flex justify-between items-end w-[95%] mt-4 mx-auto">
       <section className="flex flex-row-reverse justify-center gap-2 relative z-20 lg:gap-0 lg:justify-normal lg:flex-col items-center">
         <Image
           ref={logoRef}

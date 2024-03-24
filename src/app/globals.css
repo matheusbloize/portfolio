@@ -108,13 +108,6 @@ img {
   background-color: #131315;
 }
 
-/* .bg-brain {
-  background-image: url("../assets/images/brain.webp");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: 130vh 80vh;
-} */
-
 @keyframes nav-in-400 {
   0% {
     left: -400px;

@@ -5,13 +5,13 @@ import rd from "@/assets/images/rd.svg";
 
 const About = () => {
   return (
-    <section className="flex flex-col w-[95%] gap-8 h-screen mx-auto">
+    <section className="flex flex-col w-[95%] gap-8 h-fit lg:min-h-screen mx-auto mb-20 lg:mb-0">
       <h2 className="font-bold text-32 leading-1em uppercase sm:text-64 lg:text-94">
         Pleased to meet you
       </h2>
       <section className="flex flex-col gap-16 sm:flex-row sm:gap-4">
         <Image
-          className="rounded-lg h-fit sm:w-fit lg:h-[80%]"
+          className="rounded-lg h-[80%] flex-1 sm:w-fit md:h-fit"
           src={math}
           alt="Matheus Bloize Image."
           width={591}
