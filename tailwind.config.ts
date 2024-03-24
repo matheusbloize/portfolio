@@ -39,6 +39,7 @@ const config: Config = {
       },
       lineHeight: {
         "1em": "1em",
+        "1.5em": "1.5em",
       },
       keyframes: {
         nav: {

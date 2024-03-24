@@ -63,7 +63,7 @@ const Header = () => {
   }, []);
 
   return (
-    <header className="lg:flex justify-between items-end w-[95%] mt-4 mx-auto">
+    <header className="lg:flex justify-between items-end w-[95%] mt-4 absolute mx-4">
       <section className="flex flex-row-reverse justify-center gap-2 relative z-20 lg:gap-0 lg:justify-normal lg:flex-col items-center">
         <Image
           ref={logoRef}
@@ -89,19 +89,19 @@ const Header = () => {
         <section
           className={`${actualImage.alt !== "Matheus Bloize's Logo." ? "flex flex-col mt-24 gap-3 mx-auto" : "hidden lg:flex lg:flex-row lg:gap-8 lg:my-6"}`}
         >
-          <Link className="relative border-link" href={"#about"}>
+          <Link className="relative border-link w-fit" href={"#about"}>
             About
           </Link>
-          <Link className="relative border-link" href={"#services"}>
+          <Link className="relative border-link w-fit" href={"#services"}>
             Services
           </Link>
-          <Link className="relative border-link" href={"#projects"}>
+          <Link className="relative border-link w-fit" href={"#projects"}>
             Projects
           </Link>
-          <Link className="relative border-link" href={"#experience"}>
+          <Link className="relative border-link w-fit" href={"#experience"}>
             Experience
           </Link>
-          <Link className="relative border-link" href={"#contact"}>
+          <Link className="relative border-link w-fit" href={"#contact"}>
             Contact
           </Link>
         </section>
