@@ -1,10 +1,11 @@
 import Head from "next/head";
 
-import Header from "@/components/Header";
 import About from "@/components/sections/About";
+import Experience from "@/components/sections/Experience";
 import Hero from "@/components/sections/Hero";
 import Projects from "@/components/sections/Projects";
 import Services from "@/components/sections/Services";
+import Header from "@/components/ui/Header";
 
 const Home = () => {
   return (
@@ -23,6 +24,7 @@ const Home = () => {
         <About />
         <Services />
         <Projects />
+        <Experience />
       </main>
     </>
   );

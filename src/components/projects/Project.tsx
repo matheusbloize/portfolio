@@ -1,5 +1,7 @@
 import Image, { StaticImageData } from "next/image";
 
+import Tech from "../general/Tech";
+
 interface Props {
   name: string;
   images: {
@@ -15,20 +17,12 @@ interface Props {
   link: string;
 }
 
-const Tech = ({ name }: { name: string }) => {
-  return (
-    <div className="bg-mb-black font-medium text-mb-white py-2 px-6 rounded-lg w-fit font-general text-14">
-      {name}
-    </div>
-  );
-};
-
 const Project = ({ name, images, description, tech, link }: Props) => {
   return (
     <a
       href={link}
       target="_blank"
-      className="flex flex-col items-center p-4 rounded-lg border-solid border-2 border-mb-black w-full lg:w-3/4"
+      className="flex flex-col items-center p-4 rounded-lg border-solid border-[1px] border-mb-black w-full lg:w-[85%] lg:max-w-7xl"
     >
       <h3 className="font-bold font-general text-32 lg:text-36">{name}</h3>
       <section className="flex flex-col gap-8 lg:flex-row">
@@ -52,7 +46,7 @@ const Project = ({ name, images, description, tech, link }: Props) => {
           {description}
         </p>
       </section>
-      <section className="flex flex-wrap gap-4 mt-4">
+      <section className="flex flex-wrap gap-4 mt-4 self-start">
         {tech.map((skill) => (
           <Tech key={skill} name={skill} />
         ))}
