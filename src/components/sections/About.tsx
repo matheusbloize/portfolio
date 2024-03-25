@@ -5,7 +5,7 @@ import rd from "@/assets/images/rd.svg";
 
 const About = () => {
   return (
-    <section className="flex flex-col w-[95%] gap-8 h-fit lg:min-h-screen mx-auto mb-20 lg:mb-0">
+    <section className="flex flex-col w-[95%] gap-8 h-fit mx-auto mb-20">
       <h2 className="font-bold text-48 leading-1em uppercase sm:text-64 lg:text-94">
         Pleased to meet you
       </h2>
@@ -16,7 +16,6 @@ const About = () => {
           alt="Matheus Bloize Image."
           width={591}
           height={788}
-          priority
         />
         <section className="flex flex-col gap-8 font-general flex-[2]">
           <p className="text-16 inline leading-1.5em lg:text-24">

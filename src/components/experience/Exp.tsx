@@ -19,7 +19,7 @@ const Exp = ({ role, company, date, description, tech }: Props) => {
           <div className="hidden text-20 sm:inline sm:text-24 lg:text-36">
             at
           </div>
-          <h4 className="text-20 leading-1em sm:text-24 lg:text-36">
+          <h4 className="text-20 leading-1em font-medium  sm:text-24 lg:text-36">
             {company}
           </h4>
         </section>

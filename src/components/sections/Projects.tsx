@@ -5,7 +5,7 @@ import Project from "../projects/Project";
 
 const Projects = () => {
   return (
-    <section className="flex flex-col w-[95%] gap-8 h-fit lg:min-h-screen mx-auto mb-20 lg:mb-0">
+    <section className="flex flex-col w-[95%] gap-8 h-fit mx-auto mb-20">
       <section className="flex flex-col">
         <h2 className="font-bold text-48 leading-1em uppercase sm:text-64 lg:text-94">
           What I made

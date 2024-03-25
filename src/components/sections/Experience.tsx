@@ -2,7 +2,7 @@ import Exp from "../experience/Exp";
 
 const Experience = () => {
   return (
-    <section className="flex flex-col w-[95%] gap-8 h-screen mx-auto">
+    <section className="flex flex-col w-[95%] gap-8 h-fit mx-auto mb-20">
       <h2 className="font-bold text-48 leading-1em uppercase sm:text-64 lg:text-94">
         Where I worked
       </h2>

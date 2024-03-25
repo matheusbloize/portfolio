@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
+
 import "./globals.css";
+import ReactQueryProvider from "@/providers/QueryProvider";
 
 const clashGrotesk = localFont({
   src: "../assets/fonts/ClashGrotesk-Variable.ttf",
@@ -33,7 +35,7 @@ export default function RootLayout({
       <body
         className={`${clashGrotesk.className} bg-mb-base text-mb-black flex flex-col`}
       >
-        {children}
+        <ReactQueryProvider>{children}</ReactQueryProvider>
         <svg>
           <filter id="grainy">
             <feTurbulence type="turbulence" baseFrequency=".25"></feTurbulence>
