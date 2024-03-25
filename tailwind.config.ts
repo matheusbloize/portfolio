@@ -38,6 +38,7 @@ const config: Config = {
         12: "0.75em",
       },
       lineHeight: {
+        ".5em": ".5em",
         "1em": "1em",
         "1.5em": "1.5em",
       },

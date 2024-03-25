@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
-import Head from "next/head";
 
 const clashGrotesk = localFont({
   src: "../assets/fonts/ClashGrotesk-Variable.ttf",
@@ -31,14 +30,6 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <Head>
-        <link
-          rel="preload"
-          href="/static/images/brain.webp"
-          as="image"
-          type="image/webp"
-        />
-      </Head>
       <body
         className={`${clashGrotesk.className} bg-mb-base text-mb-black flex flex-col`}
       >
