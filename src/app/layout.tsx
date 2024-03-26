@@ -9,19 +9,26 @@ const clashGrotesk = localFont({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://matheusbloize.com/"),
   title: "Matheus Bloize - Frontend Developer",
   description:
     "Matheus Bloize is a chill frontend developer who builds easy and accessible interfaces.",
   authors: [
     {
       name: "Matheus Bloize",
-      url: "https://www.linkedin.com/in/matheus-bloize/",
+      url: "https://matheusbloize.com/",
     },
   ],
+  manifest: "https://matheusbloize.com/manifest.json",
   openGraph: {
     title: "Matheus Bloize - Frontend Developer",
+    type: "website",
     description:
       "Matheus Bloize is a chill frontend developer who builds easy and accessible interfaces.",
+    images: "/static/images/logo.svg",
+    url: "https://matheusbloize.com/",
+    locale: "en_US",
+    alternateLocale: "pt_BR",
   },
 };
 

@@ -1,0 +1,23 @@
+{
+  "short_name": "Matheus Bloize",
+  "name": "Matheus Bloize - Frontend Developer",
+  "description": "Matheus Bloize is a chill frontend developer who builds easy and accessible interfaces.",
+  "icons": [
+    {
+      "src": "https://i.imgur.com/B83RFTa.png",
+      "type": "image/png",
+      "sizes": "192x192",
+      "purpose": "maskable"
+    },
+    {
+      "src": "https://i.imgur.com/B83RFTa.png",
+      "type": "image/png",
+      "sizes": "512x512",
+      "purpose": "maskable"
+    }
+  ],
+  "start_url": "https://matheusbloize.com/",
+  "background_color": "#F1E7DB",
+  "display": "standalone",
+  "theme_color": "#F1E7DB"
+}
