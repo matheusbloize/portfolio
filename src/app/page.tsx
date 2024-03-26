@@ -6,6 +6,7 @@ import Experience from "@/components/sections/Experience";
 import Hero from "@/components/sections/Hero";
 import Projects from "@/components/sections/Projects";
 import Services from "@/components/sections/Services";
+import Footer from "@/components/ui/Footer";
 import Header from "@/components/ui/Header";
 
 const Home = () => {
@@ -28,6 +29,7 @@ const Home = () => {
         <Experience />
         <Contact />
       </main>
+      <Footer />
     </>
   );
 };

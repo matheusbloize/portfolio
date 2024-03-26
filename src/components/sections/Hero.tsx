@@ -30,7 +30,7 @@ const Hero = () => {
         </section>
         <section className="flex gap-8">
           <a
-            className="border-link relative"
+            className="border-link relative w-fit"
             href="https://github.com/matheusbloize"
             target="_blank"
           >
@@ -42,7 +42,7 @@ const Hero = () => {
             />
           </a>
           <a
-            className="border-link relative"
+            className="border-link relative w-fit"
             href="https://www.linkedin.com/in/matheus-bloize/"
             target="_blank"
           >
@@ -54,7 +54,7 @@ const Hero = () => {
             />
           </a>
           <a
-            className="border-link relative"
+            className="border-link relative w-fit"
             href="https://www.instagram.com/matheus.bloize/"
             target="_blank"
           >
