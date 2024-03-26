@@ -8,16 +8,18 @@ const Hero = () => {
   return (
     <section className="relative flex flex-col items-center justify-start w-full h-screen">
       <section className="w-full h-[85vh] flex flex-col justify-center items-center gap-8">
-        <Image
-          className="absolute w-[120vh] h-[80vh] -z-10 object-cover"
-          src={"/static/images/brain.webp"}
-          alt="Brain Shape."
-          width={1138}
-          height={795}
-          priority
-          loading="eager"
-          sizes="67.52vw"
-        />
+        <picture className="absolute flex w-full h-full justify-center items-center -z-10">
+          <source type="image/webp" />
+          <Image
+            className="absolute w-[120vh] h-[80vh] -z-10 object-cover"
+            src={"/static/images/brain.webp"}
+            alt="Brain Shape."
+            width={1138}
+            height={795}
+            priority
+            sizes="67.52vw"
+          />
+        </picture>
         <section className="flex flex-col">
           <p className="font-general text-20 leading-1em md:text-36">
             Hi, I&apos;m

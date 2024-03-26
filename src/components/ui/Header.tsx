@@ -98,11 +98,21 @@ const Header = () => {
           onClick={toggleImage}
           className={`${actualImage.alt !== "Matheus Bloize's Logo." ? "flex flex-col mt-24 gap-3 mx-auto" : "hidden lg:flex lg:flex-row lg:gap-8 lg:my-6"}`}
         >
-          <button className="relative border-link w-fit">About</button>
-          <button className="relative border-link w-fit">Services</button>
-          <button className="relative border-link w-fit">Projects</button>
-          <button className="relative border-link w-fit">Experience</button>
-          <button className="relative border-link w-fit">Contact</button>
+          <button tabIndex={0} className="relative border-link w-fit">
+            About
+          </button>
+          <button tabIndex={0} className="relative border-link w-fit">
+            Services
+          </button>
+          <button tabIndex={0} className="relative border-link w-fit">
+            Projects
+          </button>
+          <button tabIndex={0} className="relative border-link w-fit">
+            Experience
+          </button>
+          <button tabIndex={0} className="relative border-link w-fit">
+            Contact
+          </button>
         </section>
       </nav>
     </header>
