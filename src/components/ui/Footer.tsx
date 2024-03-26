@@ -10,7 +10,7 @@ const Footer = () => {
       <section className="flex relative">
         <section className="flex w-full justify-around z-10 lg:w-[65%]">
           <section className="flex flex-col text-24 lg:text-36">
-            <h5 className="font-bold uppercase">Navigation</h5>
+            <h3 className="font-bold uppercase">Navigation</h3>
             <nav
               onClick={(e) => handleLink(e, "footer")}
               className="flex flex-col"
@@ -24,7 +24,7 @@ const Footer = () => {
             </nav>
           </section>
           <section className="flex flex-col text-24 lg:text-36">
-            <h5 className="font-bold uppercase">Socials</h5>
+            <h3 className="font-bold uppercase">Socials</h3>
             <nav className="flex flex-col">
               <a
                 className="border-link relative w-fit"

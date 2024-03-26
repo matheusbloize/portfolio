@@ -16,6 +16,7 @@ const Hero = () => {
           height={795}
           priority
           loading="eager"
+          sizes="67.52vw"
         />
         <section className="flex flex-col">
           <p className="font-general text-20 leading-1em md:text-36">

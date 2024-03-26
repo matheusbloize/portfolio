@@ -98,30 +98,45 @@ const Contact = () => {
           onSubmit={handleSendEmail}
           className="flex flex-col gap-4 relative"
         >
-          <label className="absolute font-medium px-2 z-10 -top-3 left-4">
+          <label
+            htmlFor="form_name"
+            className="absolute font-medium px-2 z-10 -top-3 left-4"
+          >
             name
           </label>
           <input
+            id="form_name"
             className="bg-transparent border-solid border-2 relative border-mb-black rounded-lg py-4 px-6 font-medium transition-all focus:outline-mb-white"
             type="text"
             name="form_name"
+            autoComplete="off"
           />
-          <label className="absolute font-medium px-2 z-10 top-16 left-4">
+          <label
+            htmlFor="form_email"
+            className="absolute font-medium px-2 z-10 top-16 left-4"
+          >
             email
           </label>
           <input
+            id="form_email"
             className="bg-transparent border-solid border-2 border-mb-black rounded-lg py-4 px-6 font-medium transition-all focus:outline-mb-white"
             type="email"
             name="form_email"
+            autoComplete="off"
           />
-          <label className="absolute font-medium px-2 z-10 top-[8.75rem] left-4">
+          <label
+            htmlFor="form_message"
+            className="absolute font-medium px-2 z-10 top-[8.75rem] left-4"
+          >
             message
           </label>
           <textarea
+            id="form_message"
             className="bg-transparent border-solid border-2 border-mb-black rounded-lg py-4 px-6 font-medium transition-all focus:outline-mb-white"
             cols={30}
             rows={5}
             name="form_message"
+            autoComplete="off"
           ></textarea>
           <button
             className="bg-transparent border-solid border-2 border-mb-black rounded-lg py-2 px-8 self-start font-medium transition-all hover:text-mb-base hover:bg-mb-black disabled:cursor-not-allowed"

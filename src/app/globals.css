@@ -112,6 +112,13 @@ label {
   background-image: url("/static/images/bg.svg")
 }
 
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 10px 30px #F1E7DB inset !important;
+}
+
 @keyframes nav-in-400 {
   0% {
     left: -400px;
@@ -161,6 +168,7 @@ label {
     opacity: 0;
     right: 90%;
   }
+
   100% {
     opacity: 1;
     right: 50%;
