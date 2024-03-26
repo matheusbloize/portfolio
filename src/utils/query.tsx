@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const URL = "https://matheusbloize.com";
+const URL = "https://matheusbloize.com/api";
 
 interface Error {
   response: {
