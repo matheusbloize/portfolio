@@ -1,29 +1,26 @@
+"use client";
+
 import Image from "next/image";
-import Link from "next/link";
+
+import handleLink from "@/utils/handleLink";
 
 const Footer = () => {
   return (
     <footer className="flex flex-col">
       <section className="flex relative">
-        <section className="flex w-full justify-around lg:w-[65%]">
+        <section className="flex w-full justify-around z-10 lg:w-[65%]">
           <section className="flex flex-col text-24 lg:text-36">
             <h5 className="font-bold uppercase">Navigation</h5>
-            <nav className="flex flex-col">
-              <Link className="relative border-link w-fit" href={"#about"}>
-                About
-              </Link>
-              <Link className="relative border-link w-fit" href={"#services"}>
-                Services
-              </Link>
-              <Link className="relative border-link w-fit" href={"#projects"}>
-                Projects
-              </Link>
-              <Link className="relative border-link w-fit" href={"#experience"}>
-                Experience
-              </Link>
-              <Link className="relative border-link w-fit" href={"#contact"}>
-                Contact
-              </Link>
+            <nav
+              onClick={(e) => handleLink(e, "footer")}
+              className="flex flex-col"
+            >
+              <button className="relative border-link w-fit">Home</button>
+              <button className="relative border-link w-fit">About</button>
+              <button className="relative border-link w-fit">Services</button>
+              <button className="relative border-link w-fit">Projects</button>
+              <button className="relative border-link w-fit">Experience</button>
+              <button className="relative border-link w-fit">Contact</button>
             </nav>
           </section>
           <section className="flex flex-col text-24 lg:text-36">

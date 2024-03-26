@@ -1,8 +1,9 @@
 "use client";
 
 import Image from "next/image";
-import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
+
+import handleLink from "@/utils/handleLink";
 
 const Header = () => {
   const navRef = useRef<HTMLElement | null>(null);
@@ -90,26 +91,18 @@ const Header = () => {
       </section>
       <nav
         ref={navRef}
+        onClick={(e) => handleLink(e, "header")}
         className={`flex flex-col leading-1em ${actualImage.alt !== "Matheus Bloize's Logo." ? "absolute bg-mb-base h-full text-32 gap-3 z-10 w-full m-0 top-0 left-0" : "text-20 mx-20 w-fit lg:text-32 lg:m-0"}`}
       >
         <section
+          onClick={toggleImage}
           className={`${actualImage.alt !== "Matheus Bloize's Logo." ? "flex flex-col mt-24 gap-3 mx-auto" : "hidden lg:flex lg:flex-row lg:gap-8 lg:my-6"}`}
         >
-          <Link className="relative border-link w-fit" href={"#about"}>
-            About
-          </Link>
-          <Link className="relative border-link w-fit" href={"#services"}>
-            Services
-          </Link>
-          <Link className="relative border-link w-fit" href={"#projects"}>
-            Projects
-          </Link>
-          <Link className="relative border-link w-fit" href={"#experience"}>
-            Experience
-          </Link>
-          <Link className="relative border-link w-fit" href={"#contact"}>
-            Contact
-          </Link>
+          <button className="relative border-link w-fit">About</button>
+          <button className="relative border-link w-fit">Services</button>
+          <button className="relative border-link w-fit">Projects</button>
+          <button className="relative border-link w-fit">Experience</button>
+          <button className="relative border-link w-fit">Contact</button>
         </section>
       </nav>
     </header>
