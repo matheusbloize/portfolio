@@ -11,7 +11,10 @@ const handleLink = (
     .querySelectorAll("button") as NodeListOf<HTMLButtonElement>;
   if (target.tagName === "BUTTON") {
     const button = target as HTMLButtonElement;
-    if (button.innerText.toLowerCase() === "home") {
+    if (
+      button.innerText.toLowerCase() === "home" ||
+      button.innerText.toLowerCase() === "início"
+    ) {
       scrollTo(0, 0);
     } else {
       for (let i = 0; i < buttonList.length; i++) {

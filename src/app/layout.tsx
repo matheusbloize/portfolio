@@ -40,7 +40,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${clashGrotesk.className} bg-mb-base text-mb-black flex flex-col`}
+        className={`${clashGrotesk.className} bg-mb-base text-mb-black flex flex-col overflow-hidden`}
       >
         <ReactQueryProvider>{children}</ReactQueryProvider>
         <svg>

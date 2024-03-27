@@ -23,12 +23,11 @@ const config: Config = {
         "mb-green": "#5BDE0A",
       },
       fontSize: {
-        128: "8em",
         120: "7.5em",
-        96: "6em",
         94: "5.875em",
         64: "4em",
         48: "3em",
+        46.4: "2.9em",
         36: "2.25em",
         32: "2em",
         24: "1.5em",

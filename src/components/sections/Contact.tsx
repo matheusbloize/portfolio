@@ -9,7 +9,7 @@ import github from "@/assets/images/github.svg";
 import instagram from "@/assets/images/instagram.svg";
 import linkedin from "@/assets/images/linkedin.svg";
 
-const Contact = () => {
+const Contact = ({ lang }: { lang: "en" | "br" }) => {
   const modalRef = useRef<HTMLDivElement | null>(null);
   let form_name: string, form_email: string, form_message: string;
   const sendEmailMutation = useMutation({
@@ -80,17 +80,25 @@ const Contact = () => {
         ref={modalRef}
         className="hidden absolute z-20 font-general flex-col p-4 gap-4 items-center bg-mb-base border-solid border-2 border-mb-black rounded-lg [transform:translate(50%,0);] bottom-0 right-1/2 h-fit w-80 lg:top-[15%] lg:bottom-auto"
       >
-        <span className="font-bold text-32 leading-1.5em">Thank you!</span>
+        <span className="font-bold text-32 leading-1.5em">
+          {lang === "en" ? "Thank you!" : "Obrigado!"}
+        </span>
         <p className="text-24 leading-1em">
-          Your email was sent! <br /> I&apos;ll read and respond soon!
+          {lang === "en" ? "Your email was sent!" : "Seu email foi enviado!"}{" "}
+          <br />{" "}
+          {lang === "en"
+            ? "I'll read and respond soon!"
+            : "Responderei em breve!"}
         </p>
       </div>
       <section className="flex flex-col">
-        <h2 className="font-bold text-48 leading-1em uppercase sm:text-64 lg:text-94">
-          If you&apos;re interested
+        <h2
+          className={`font-bold ${lang === "en" ? "text-48" : "text-46.4"} leading-1em uppercase sm:text-64 lg:text-94`}
+        >
+          {lang === "en" ? "If you're interested" : "Caso esteja interessado"}
         </h2>
         <span className="text-20 leading-.5em lg:text-36">
-          let&apos;s chat!
+          {lang === "en" ? "let's chat!" : "vamos conversar!"}
         </span>
       </section>
       <section className="flex flex-col gap-8 lg:gap-40 lg:flex-row lg:w-[85%] lg:max-w-7xl">
@@ -102,7 +110,7 @@ const Contact = () => {
             htmlFor="form_name"
             className="absolute font-medium px-2 z-10 -top-3 left-4"
           >
-            name
+            {lang === "en" ? "name" : "nome"}
           </label>
           <input
             id="form_name"
@@ -128,7 +136,7 @@ const Contact = () => {
             htmlFor="form_message"
             className="absolute font-medium px-2 z-10 top-[8.75rem] left-4"
           >
-            message
+            {lang === "en" ? "message" : "mensagem"}
           </label>
           <textarea
             id="form_message"
@@ -143,7 +151,7 @@ const Contact = () => {
             type="submit"
             name="form_button"
           >
-            submit
+            {lang === "en" ? "submit" : "enviar"}
           </button>
         </form>
         <section className="flex gap-2 justify-center">
@@ -152,21 +160,36 @@ const Contact = () => {
             href="mailto:mbloizepd@gmail.com"
             target="_blank"
           >
-            <Image src={email} alt="Email Icon." width={40} height={40} />
+            <Image
+              src={email}
+              alt={lang === "en" ? "Email Icon." : "Ícone de Email."}
+              width={40}
+              height={40}
+            />
           </a>
           <a
             className="transition-all relative border-link h-fit"
             href="https://github.com/matheusbloize"
             target="_blank"
           >
-            <Image src={github} alt="GitHub Icon." width={40} height={40} />
+            <Image
+              src={github}
+              alt={lang === "en" ? "GitHub Icon." : "Ícone do GitHub."}
+              width={40}
+              height={40}
+            />
           </a>
           <a
             className="transition-all relative border-link h-fit"
             href="https://www.linkedin.com/in/matheus-bloize/"
             target="_blank"
           >
-            <Image src={linkedin} alt="LinkedIn Icon." width={40} height={40} />
+            <Image
+              src={linkedin}
+              alt={lang === "en" ? "LinkedIn Icon." : "Ícone do LinkedIn."}
+              width={40}
+              height={40}
+            />
           </a>
           <a
             className="transition-all relative border-link h-fit"
@@ -175,7 +198,7 @@ const Contact = () => {
           >
             <Image
               src={instagram}
-              alt="Instagram Icon."
+              alt={lang === "en" ? "Instagram Icon." : "Ícone do Instagram."}
               width={40}
               height={40}
             />

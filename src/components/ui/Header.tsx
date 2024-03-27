@@ -5,7 +5,8 @@ import { useEffect, useRef, useState } from "react";
 
 import handleLink from "@/utils/handleLink";
 
-const Header = () => {
+const Header = ({ lang }: { lang: "en" | "br" }) => {
+  const modalRef = useRef<HTMLDivElement | null>(null);
   const navRef = useRef<HTMLElement | null>(null);
   const logoRef = useRef<HTMLImageElement | null>(null);
   const [actualImage, setActualImage] = useState<{ src: string; alt: string }>({
@@ -17,7 +18,13 @@ const Header = () => {
     if (window.innerWidth >= 1024) return;
     setActualImage(
       actualImage.alt === "Matheus Bloize's Logo."
-        ? { src: "/static/images/close.svg", alt: "Close Nav Button." }
+        ? {
+            src: "/static/images/close.svg",
+            alt:
+              lang === "en"
+                ? "Close Nav Button."
+                : "Botão de Fechar Navegação.",
+          }
         : {
             src: "/static/images/logo.svg",
             alt: "Matheus Bloize's Logo.",
@@ -63,6 +70,19 @@ const Header = () => {
   };
 
   useEffect(() => {
+    const alreadyVisitedStorage = localStorage.getItem(
+      "already_visited",
+    ) as string;
+    if (alreadyVisitedStorage !== "true") {
+      localStorage.setItem("already_visited", "true");
+    }
+    location.pathname === "/en"
+      ? localStorage.setItem("selected_lang", "en_US")
+      : localStorage.setItem("selected_lang", "pt_BR");
+    if (modalRef.current) {
+      modalRef.current.style.display = "none";
+    }
+    document.body.style.overflow = "auto";
     window.addEventListener("resize", checkWidth);
     return () => {
       window.removeEventListener("resize", checkWidth);
@@ -71,6 +91,12 @@ const Header = () => {
 
   return (
     <header className="lg:flex justify-between items-end w-[95%] mt-4 mx-auto">
+      <div
+        ref={modalRef}
+        className="fixed w-full h-full bg-mb-base top-0 left-0 z-30 flex justify-center items-center"
+      >
+        <div className="border-solid border-2 border-mb-black rounded-full animate-spin border-r-0 border-b-0 w-16 h-16"></div>
+      </div>
       <section className="flex flex-row-reverse justify-center gap-2 relative z-20 lg:gap-0 lg:justify-normal lg:flex-col items-center">
         <Image
           ref={logoRef}
@@ -85,7 +111,11 @@ const Header = () => {
           <span className="text-32 leading-1em">Matheus Bloize</span>
           <section className="flex gap-1 items-center">
             <div className="w-3 h-3 bg-mb-green rounded-full"></div>
-            <p className="uppercase lg:text-16">Available For Work</p>
+            <p className="uppercase lg:text-16">
+              {lang === "en"
+                ? "Available for work"
+                : "Disponível para trabalho"}
+            </p>
           </section>
         </section>
       </section>
@@ -99,19 +129,19 @@ const Header = () => {
           className={`${actualImage.alt !== "Matheus Bloize's Logo." ? "flex flex-col mt-24 gap-3 mx-auto" : "hidden lg:flex lg:flex-row lg:gap-8 lg:my-6"}`}
         >
           <button tabIndex={0} className="relative border-link w-fit">
-            About
+            {lang === "en" ? "About" : "Sobre"}
           </button>
           <button tabIndex={0} className="relative border-link w-fit">
-            Services
+            {lang === "en" ? "Services" : "Serviços"}
           </button>
           <button tabIndex={0} className="relative border-link w-fit">
-            Projects
+            {lang === "en" ? "Projects" : "Projetos"}
           </button>
           <button tabIndex={0} className="relative border-link w-fit">
-            Experience
+            {lang === "en" ? "Experience" : "Experiência"}
           </button>
           <button tabIndex={0} className="relative border-link w-fit">
-            Contact
+            {lang === "en" ? "Contact" : "Contato"}
           </button>
         </section>
       </nav>

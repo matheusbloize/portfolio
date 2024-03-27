@@ -6,9 +6,17 @@ interface Props {
   date: string;
   description: string;
   tech: string[];
+  preposition: "at" | "na" | "no";
 }
 
-const Exp = ({ role, company, date, description, tech }: Props) => {
+const Exp = ({
+  role,
+  company,
+  date,
+  description,
+  tech,
+  preposition,
+}: Props) => {
   return (
     <article className="flex flex-col font-general gap-6 p-4 border-solid border-[1px] border-mb-black rounded-lg lg:w-[85%] lg:max-w-7xl">
       <section className="flex items-center flex-col sm:items-start">
@@ -17,7 +25,7 @@ const Exp = ({ role, company, date, description, tech }: Props) => {
             {role}
           </h3>
           <div className="hidden text-20 sm:inline sm:text-24 lg:text-36">
-            at
+            {preposition}
           </div>
           <h4 className="text-20 leading-1em font-medium  sm:text-24 lg:text-36">
             {company}
