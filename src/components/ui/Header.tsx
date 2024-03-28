@@ -122,7 +122,7 @@ const Header = ({ lang }: { lang: "en" | "br" }) => {
       <nav
         ref={navRef}
         onClick={(e) => handleLink(e, "header")}
-        className={`flex flex-col leading-1em ${actualImage.alt !== "Matheus Bloize's Logo." ? "absolute bg-mb-base h-full text-32 gap-3 z-10 w-full m-0 top-0 left-0" : "text-20 mx-20 w-fit lg:text-32 lg:m-0"}`}
+        className={`flex flex-col leading-1em ${actualImage.alt !== "Matheus Bloize's Logo." ? "absolute bg-mb-base h-dvh text-32 gap-3 z-10 w-full m-0 top-0 left-0" : "text-20 mx-20 w-fit lg:text-32 lg:m-0"}`}
       >
         <section
           onClick={toggleImage}
