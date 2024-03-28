@@ -8,6 +8,9 @@ import Projects from "@/components/sections/Projects";
 import Services from "@/components/sections/Services";
 import Footer from "@/components/ui/Footer";
 import Header from "@/components/ui/Header";
+import metadataHead from "@/utils/metadataHead";
+
+export const metadata = metadataHead({ lang: "en" });
 
 const PageEn = () => {
   return (

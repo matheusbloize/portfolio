@@ -4,13 +4,13 @@
   "description": "Matheus Bloize is a chill frontend developer who builds easy and accessible interfaces.",
   "icons": [
     {
-      "src": "https://i.imgur.com/B83RFTa.png",
+      "src": "https://res.cloudinary.com/default-delivery/image/upload/w_192,h_192/v1711646890/absyckcyi1wpd4vb54yh.png",
       "type": "image/png",
       "sizes": "192x192",
       "purpose": "maskable"
     },
     {
-      "src": "https://i.imgur.com/B83RFTa.png",
+      "src": "https://res.cloudinary.com/default-delivery/image/upload/w_512,h_512/v1711646890/absyckcyi1wpd4vb54yh.png",
       "type": "image/png",
       "sizes": "512x512",
       "purpose": "maskable"

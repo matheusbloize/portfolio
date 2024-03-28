@@ -77,8 +77,10 @@ const Header = ({ lang }: { lang: "en" | "br" }) => {
       localStorage.setItem("already_visited", "true");
     }
     location.pathname === "/en"
-      ? localStorage.setItem("selected_lang", "en_US")
-      : localStorage.setItem("selected_lang", "pt_BR");
+      ? (localStorage.setItem("selected_lang", "en_US"),
+        (document.documentElement.lang = "en"))
+      : (localStorage.setItem("selected_lang", "pt_BR"),
+        (document.documentElement.lang = "pt-BR"));
     if (modalRef.current) {
       modalRef.current.style.display = "none";
     }

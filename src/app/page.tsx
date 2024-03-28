@@ -34,7 +34,7 @@ const Home = () => {
 
   return (
     <>
-      <div className="absolute w-full h-full bg-mb-base top-0 left-0 z-30 flex justify-center items-center">
+      <div className="absolute w-full h-dvh bg-mb-base top-0 left-0 z-30 flex justify-center items-center">
         <div
           ref={loadingRef}
           className="border-solid border-2 border-mb-black rounded-full animate-spin border-r-0 border-b-0 w-16 h-16"
