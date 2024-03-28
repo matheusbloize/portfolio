@@ -23,7 +23,7 @@ export default function RootLayout({
         <ReactQueryProvider>{children}</ReactQueryProvider>
         <svg>
           <filter id="grainy">
-            <feTurbulence type="turbulence" baseFrequency=".25"></feTurbulence>
+            <feTurbulence type="turbulence" baseFrequency=".35"></feTurbulence>
             <feColorMatrix type="saturate" values="0"></feColorMatrix>
           </filter>
         </svg>
