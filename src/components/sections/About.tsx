@@ -37,8 +37,8 @@ const About = ({ lang }: { lang: "en" | "br" }) => {
           <p className="text-16 inline leading-1.5em lg:text-24">
             <span className="font-medium text-24">T</span>
             {lang === "en"
-              ? "he things that I like to do, besides coding, are work out (currently only running), read, relax, listen to podcasts, also sometimes play and study."
-              : "irando programar, as coisas que gosto de fazer são treinar (atualmente somente corrida), ler, relaxar, ouvir podcasts, jogar de vez em quando e estudar."}
+              ? "he things that I like doing, besides coding, are working out, running, reading, relaxing, listening to podcasts, studying and playing."
+              : "irando programar, as coisas que gosto de fazer são treinar, correr, ler, relaxar, ouvir podcasts, estudar e jogar."}
             <span className="inline-block">
               <Image
                 className="w-4 h-5 lg:w-6 lg:h-7"
