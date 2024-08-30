@@ -29,7 +29,7 @@ const Services = ({ lang }: { lang: "en" | "br" }) => {
               width={75}
               height={15}
             />
-            <h3 className="font-bold text-20 uppercase sm:text-48">
+            <h3 className="font-bold text-20 uppercase sm:text-44.8">
               {lang === "en" ? "Web Development" : "Desenvolvimento Web"}
             </h3>
             <Image
