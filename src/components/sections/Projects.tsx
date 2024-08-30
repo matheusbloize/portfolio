@@ -31,7 +31,7 @@ const Projects = ({ lang }: { lang: "en" | "br" }) => {
               : "Math Delivery é um sistema completo de delivery. Com as opções de entrega, retirada e reserva de mesas, além de vir com criação de contas por cargos (clientes, gerente e administrador) e uma área de administração para gerenciar todas as informações do sistema. É um site fácil de utilizar, criado para trabalhar com restaurantes."
           }
           tech={[
-            "Next.js",
+            "Next.js (React.js)",
             "TypeScript",
             "Mongo DB",
             "React Query",
