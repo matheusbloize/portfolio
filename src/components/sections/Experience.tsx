@@ -15,10 +15,15 @@ const Experience = ({ lang }: { lang: "en" | "br" }) => {
           }
           description={
             lang === "en"
-              ? "I built, developed and collaborated with the team to create two projects from scratch. A Social Network, where my main function was to develop and finish the tasks on time, and an E-Commerce, where I was the leader of the frontend team and my objectives were to develop, organize the code and tasks and help the team members."
-              : "Construí, desenvolvi e colaborei com o time para criar dois projetos do zero. Uma Rede Social, onde minha principal função era desenvolver e finalizar as tarefas no prazo, e um E-Commerce, onde fui o líder do time de frontend e meus objetivos foram desenvolvedor, organizar o código e tarefas e ajudar os membros do time."
+              ? "I built, developed and collaborated with the team to create two Next.js projects from scratch. A Social Network, where my main function was to develop and finish the tasks on time, and an E-Commerce, where I was the leader of the frontend team and my objectives were to develop, organize the code and tasks and help the team members."
+              : "Construí, desenvolvi e colaborei com o time para criar dois projetos Next.js do zero. Uma Rede Social, onde minha principal função era desenvolver e finalizar as tarefas no prazo, e um E-Commerce, onde fui o líder do time de frontend e meus objetivos foram desenvolvedor, organizar o código e tarefas e ajudar os membros do time."
           }
-          tech={["Next.js", "TypeScript", "TailwindCSS", "React Query"]}
+          tech={[
+            "Next.js (React.js)",
+            "TypeScript",
+            "TailwindCSS",
+            "React Query",
+          ]}
           preposition={lang === "en" ? "at" : "no"}
         />
         <Exp
@@ -33,8 +38,8 @@ const Experience = ({ lang }: { lang: "en" | "br" }) => {
           }
           description={
             lang === "en"
-              ? "I collaborated with the team by doing tasks and some product research. I had to get out of my comfort zone to understand new technologies such as Python, Linux and PostgreSQL. I also took part in daily meetings and managed to understand how different people in the team solve their problems."
-              : "Colaborei com o time fazendo tarefas e algumas pesquisas de produto. Tive que sair da minha zona de conforto para entender novas tecnologias como Python, Linux e PostgreSQL. Também participei de reuniões diárias e consegui entender como diferentes pessoas do time resolvem seus problemas."
+              ? "I collaborated with the team by doing tasks in React.js and some product research. I had to get out of my comfort zone to understand new technologies such as Python, Linux and PostgreSQL. I also took part in daily meetings and managed to understand how different people in the team solve their problems."
+              : "Colaborei com o time fazendo tarefas em React.js e algumas pesquisas de produto. Tive que sair da minha zona de conforto para entender novas tecnologias como Python, Linux e PostgreSQL. Também participei de reuniões diárias e consegui entender como diferentes pessoas do time resolvem seus problemas."
           }
           tech={["React.js", "PostgreSQL", "Linux/WSL", "Python", "Figma"]}
           preposition={lang === "en" ? "at" : "na"}
