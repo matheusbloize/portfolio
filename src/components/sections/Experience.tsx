@@ -16,7 +16,7 @@ const Experience = ({ lang }: { lang: "en" | "br" }) => {
           description={
             lang === "en"
               ? "I built, developed and collaborated with the team to create two Next.js projects from scratch. A Social Network, where my main function was to develop and finish the tasks on time, and an E-Commerce, where I was the leader of the frontend team and my objectives were to develop, organize the code and tasks and help the team members."
-              : "Construí, desenvolvi e colaborei com o time para criar dois projetos Next.js do zero. Uma Rede Social, onde minha principal função era desenvolver e finalizar as tarefas no prazo, e um E-Commerce, onde fui o líder do time de frontend e meus objetivos foram desenvolvedor, organizar o código e tarefas e ajudar os membros do time."
+              : "Construí, desenvolvi e colaborei com o time para criar dois projetos Next.js do zero. Uma Rede Social, onde minha principal função era desenvolver e finalizar as tarefas no prazo, e um E-Commerce, onde fui o líder do time de frontend e meus objetivos foram desenvolver e organizar o código e tarefas e ajudar os membros do time."
           }
           tech={[
             "Next.js (React.js)",
@@ -29,8 +29,8 @@ const Experience = ({ lang }: { lang: "en" | "br" }) => {
         <Exp
           role={
             lang === "en"
-              ? "Frontend Developer Intern"
-              : "Desenvolvedor Frontend Estagiário"
+              ? "Frontend Developer"
+              : "Desenvolvedor Frontend"
           }
           company="Aeroespacial"
           date={
