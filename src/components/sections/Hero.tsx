@@ -29,8 +29,8 @@ const Hero = ({ lang }: { lang: "en" | "br" }) => {
           </h1>
           <p className="font-general text-center text-20 leading-1em md:text-36">
             {lang === "en"
-              ? "a chill frontend developer"
-              : "um desenvolvedor frontend tranquilo"}
+              ? "a chill fullstack developer"
+              : "um desenvolvedor fullstack tranquilo"}
           </p>
         </section>
         <section className="flex gap-8">
