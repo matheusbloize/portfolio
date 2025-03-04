@@ -5,12 +5,12 @@ const metadataHead = ({ lang }: { lang: "en" | "br" }) => {
     metadataBase: new URL("https://matheusbloize.com/"),
     title:
       lang === "en"
-        ? "Matheus Bloize - Frontend Developer"
-        : "Matheus Bloize - Desenvolvedor Frontend",
+        ? "Matheus Bloize - Fullstack Developer"
+        : "Matheus Bloize - Desenvolvedor Fullstack",
     description:
       lang === "en"
-        ? "Matheus Bloize is a chill frontend developer who builds easy and accessible interfaces."
-        : "Matheus Bloize é um desenvolvedor frontend tranquilo que constrói interfaces fáceis e acessíveis.",
+        ? "Matheus Bloize is a chill fullstack developer who builds easy and accessible interfaces."
+        : "Matheus Bloize é um desenvolvedor fullstack tranquilo que constrói interfaces fáceis e acessíveis.",
     authors: [
       {
         name: "Matheus Bloize",
@@ -21,13 +21,13 @@ const metadataHead = ({ lang }: { lang: "en" | "br" }) => {
     openGraph: {
       title:
         lang === "en"
-          ? "Matheus Bloize - Frontend Developer"
-          : "Matheus Bloize - Desenvolvedor Frontend",
+          ? "Matheus Bloize - Fullstack Developer"
+          : "Matheus Bloize - Desenvolvedor Fullstack",
       type: "website",
       description:
         lang === "en"
-          ? "Matheus Bloize is a chill frontend developer who builds easy and accessible interfaces."
-          : "Matheus Bloize é um desenvolvedor frontend tranquilo que constrói interfaces fáceis e acessíveis.",
+          ? "Matheus Bloize is a chill fullstack developer who builds easy and accessible interfaces."
+          : "Matheus Bloize é um desenvolvedor fullstack tranquilo que constrói interfaces fáceis e acessíveis.",
       images: "/static/images/logo.svg",
       url: "https://matheusbloize.com/",
       locale: lang === "en" ? "en_US" : "pt_BR",

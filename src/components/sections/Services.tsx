@@ -2,15 +2,17 @@ import Image from "next/image";
 
 import code from "@/assets/images/code.svg";
 import css from "@/assets/images/css.svg";
-import database from "@/assets/images/database.svg";
 import figma from "@/assets/images/figma.svg";
 import git from "@/assets/images/git.svg";
 import github from "@/assets/images/github_service.svg";
 import html from "@/assets/images/html.svg";
+import java from "@/assets/images/java.svg";
 import javascript from "@/assets/images/javascript.svg";
 import line from "@/assets/images/line.svg";
 import next from "@/assets/images/next.svg";
+import postgresql from "@/assets/images/postgresql.svg";
 import react from "@/assets/images/react.svg";
+import spring from "@/assets/images/spring.svg";
 import typescript from "@/assets/images/typescript.svg";
 
 const Services = ({ lang }: { lang: "en" | "br" }) => {
@@ -52,6 +54,20 @@ const Services = ({ lang }: { lang: "en" | "br" }) => {
             <section className="flex flex-wrap">
               <Image
                 className="w-12 h-12 lg:w-16 lg:h-16"
+                src={java}
+                alt={lang === "en" ? "Java Icon." : "Ícone do Java."}
+                width={64}
+                height={64}
+              />
+              <Image
+                className="w-12 h-12 lg:w-16 lg:h-16"
+                src={spring}
+                alt={lang === "en" ? "Spring Icon." : "Ícone do Spring."}
+                width={64}
+                height={64}
+              />
+              <Image
+                className="w-12 h-12 lg:w-16 lg:h-16"
                 src={javascript}
                 alt={
                   lang === "en" ? "JavaScript Icon." : "Ícone do JavaScript."
@@ -79,6 +95,15 @@ const Services = ({ lang }: { lang: "en" | "br" }) => {
                 className="w-12 h-12 lg:w-16 lg:h-16"
                 src={next}
                 alt={lang === "en" ? "Next Icon." : "Ícone do Next.js."}
+                width={64}
+                height={64}
+              />
+              <Image
+                className="w-12 h-12 lg:w-16 lg:h-16"
+                src={postgresql}
+                alt={
+                  lang === "en" ? "PostgreSQL Icon." : "Ícone do PostgreSQL.js."
+                }
                 width={64}
                 height={64}
               />
@@ -114,15 +139,6 @@ const Services = ({ lang }: { lang: "en" | "br" }) => {
                 className="w-12 h-12 lg:w-16 lg:h-16"
                 src={figma}
                 alt={lang === "en" ? "Figma Icon." : "Ícone do Figma."}
-                width={64}
-                height={64}
-              />
-              <Image
-                className="w-12 h-12 lg:w-16 lg:h-16"
-                src={database}
-                alt={
-                  lang === "en" ? "Database Icon." : "Ícone de Banco de Dados."
-                }
                 width={64}
                 height={64}
               />
